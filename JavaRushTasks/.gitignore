@@ -1,21 +1,27 @@
-﻿#############
-## Idea
-#############
-
+﻿# Idea
 *.iml
 .idea
-.idea/
+.idea/*
+/JavaRushPlugin.properties
+/Instruction.png
+/out.log
+/out.log.*
+# Idea
+
+# Package files #
+*.class
+*.jar
+*.war
+*.ear
+# Package files #
 
 # target/
 # .repository/
-
 # *.iws
 # *.jrtc
 # *.java
-# *.class
 # *.info
 # *.properties
-# *.jar
 
 # /1.JavaSyntax/
 # /2.JavaCore/
@@ -24,7 +30,3 @@
 # /5.OnlineInternship/
 # /out/
 
-/JavaRushPlugin.properties
-/Instruction.png
-/out.log
-/out.log.*

@@ -11,8 +11,6 @@ public class Solution {
     public static List<LineItem> lines = new ArrayList<LineItem>();
 
     public static void main(String[] args) {
-
-
     }
 
 
