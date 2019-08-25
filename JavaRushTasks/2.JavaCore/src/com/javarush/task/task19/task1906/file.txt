@@ -1,0 +1,2 @@
+C:\JavaRush\JavaRushTasks\2.JavaCore\src\com\javarush\task\task19\task1906\fileIn.txt
+C:\JavaRush\JavaRushTasks\2.JavaCore\src\com\javarush\task\task19\task1906\fileOut.txt

@@ -1,0 +1,115 @@
+world
+123
+worldworld
+456
+Вывести в консоль количество слов "world", которые встречаются в файле.
+
+
+Примеры кода бота
+Если вы хотите узнать больше о ботах Telegram, начните с нашего Введение в боты »
+Ознакомьтесь с часто задаваемыми вопросами , если у вас есть вопросы.
+
+Многие члены нашего сообщества создают боты и библиотеки и публикуют их исходный код. Мы собираем эти примеры здесь. Отправьте нам запрос на BotSupport, если вы создали бот и хотите поделиться его кодом с другими.
+
+Node.js
+Телеграф . Полная поддержка Telegram Bot API, включая игры и встроенный режим. 
+https://github.com/telegraf/telegraf
+
+Узел-Телеграм-бот . Модуль node.js. 
+https://github.com/yagop/node-telegram-bot-api
+
+тгапи . Реактивная и с полным покрытием Flow реализация Telegram Bot API JS. 
+https://github.com/bigslycat/tgapi
+
+Телебот . Простой способ написать ботов Telegram. 
+https://github.com/mullwar/telebot
+
+Botgram . Микрофрейм для построения ботов Telegram. 
+https://github.com/botgram/botgram
+
+telegram-bot-api . Модуль Node.js для Telegram Bot API. 
+https://github.com/mast/telegram-bot-api
+
+Slimbot . Тонкая оболочка без суеты вокруг Telegram Bot API для Node.js. Никакие оборки. 
+https://github.com/edisonchee/slimbot
+
+PHP
+Telegram Bot Api Base . Ясный и простой API бота Telegram. 
+https://github.com/tg-bot-api/bot-api-base
+
+PHP Telegram API . Полная реализация PHP7 Bot API для Telegram. 
+https://github.com/unreal4u/telegram-api
+
+PHP Telegram Bot . Чистый PHP Telegram Bot, полностью расширяемый с помощью плагинов. 
+https://github.com/php-telegram-bot/core
+
+Бот API PHP SDK . SDK с поддержкой Laravel. 
+https://github.com/irazasyed/telegram-bot-sdk
+
+PHP Telegram Bot . Телеграм бот, как и должно быть. 
+https://github.com/formapro/telegram-bot-php
+
+TuriBot . Простой способ общения с API Telegram в PHP. 
+https://github.com/davtur19/TuriBot
+
+TelegramBotApiBundle . Пакет оболочки Symfony для Telegram Bot API. 
+https://github.com/ericomgroup/TelegramBotApiBundle
+
+питон
+python-telegram-bot . Обертка, от которой нельзя отказаться. 
+https://github.com/python-telegram-bot/python-telegram-bot
+
+pyTelegramBotAPI . Python Telegram Bot API. 
+https://github.com/eternnoir/pyTelegramBotAPI
+
+AIOGram . Полностью асинхронная библиотека для Telegram Bot API, написанная с использованием asyncio и aiohttp. 
+https://github.com/aiogram/aiogram
+
+Джава
+TelegramBots . Простая в использовании библиотека для создания Telegram Bots. 
+https://github.com/rubenlagus/TelegramBots
+
+Java API для ботов и игровой платформы. 
+https://github.com/pengrad/java-telegram-bot-api
+
+Рубин
+телеграмма-бот-рубин . Рубиновая оболочка для Telegram Bot API. 
+https://github.com/atipugin/telegram-bot-ruby
+
+TelegramBot . Рубиновый клиент. 
+https://github.com/eljojo/telegram_bot
+
+стриж
+телеграмма-бот-свифт . SDK для создания Telegram Bots в Swift. 
+https://github.com/zmeyc/telegram-bot-swift
+
+SwiftyBot . Ubuntu + Swift + Vapor + Telegram. 
+https://github.com/FabrizioBrancati/SwiftyBot
+
+Другие языки
+Идти. go-telegram-bot-api . Привязки Голанга для Telegram Bot API. 
+https://github.com/go-telegram-bot-api/telegram-bot-api
+
+C ++. TarnaBot . Библиотека Qt5 / C ++ для создания ботов Telegram. 
+https://github.com/Codenegaar/TarnaBot
+
+Dart. ТелеДарт . Библиотека Dart, взаимодействующая с последним API Telegram Bot. 
+https://github.com/DinoLeung/TeleDart
+
+C #. Telegram.bot . Библиотека. 
+https://github.com/TelegramBots/Telegram.Bot
+
+Scala. bot4s.telegram . 100% идиоматическая оболочка Scala для Telegram Bot API. 
+https://github.com/bot4s/telegram
+
+Perl. Telegram Bot . Настоящий клиент Perl 6 для API-интерфейса бота Telegram. 
+https://github.com/GildedHonour/TelegramBot
+
+Lua. телеграмма-бот-луа . Функциональная библиотека Telegram Bot API. 
+https://github.com/wrxck/telegram-bot-lua
+
+Haskell. Haskell-телеграмма-апите привязки высокого уровня к API Телеграммы Bot на основе рабы библиотеки. 
+https://github.com/klappvisor/haskell-telegram-api
+
+OCaml. TelegraML . Библиотека OCaml для создания ботов для Telegram. 
+https://github.com/nv-vn/TelegraML
