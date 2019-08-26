@@ -23,46 +23,67 @@ public class Solution {
         reader.close();
 
         BufferedReader bufferedReader1 = new BufferedReader(new FileReader(file1));
-        BufferedReader bufferedReader2 = new BufferedReader(new FileReader(file2));
-
-        String line1 = null;
-        String line2 = null;
-
+        List<String> fileList1 = new ArrayList<>();
         while (bufferedReader1.ready()){
-
-            line1 = bufferedReader1.readLine();
-
-            if(line2 != null ) {
-                if(line1.equals(line2)) {
-                    lines.add(new LineItem(Type.SAME,line1));
-                    line2 = null;
-                    continue;
-                } else {
-                    lines.add(new LineItem(Type.ADDED,line2));
-                    //line2 = null;
-                }
-            }
-
-            line2 = bufferedReader2.readLine();
-            if (line1.equals(line2)) {
-                lines.add(new LineItem(Type.SAME,line1));
-                line2 = null;
-            } else {
-                lines.add(new LineItem(Type.REMOVED,line1));
-            }
-
+            fileList1.add(bufferedReader1.readLine());
         }
-
-        if(line2 != null ) {
-            //System.out.println("" + Type.ADDED + " " + line2);
-            lines.add(new LineItem(Type.ADDED,line2));
-        }
-
         bufferedReader1.close();
+
+
+        BufferedReader bufferedReader2 = new BufferedReader(new FileReader(file2));
+        List<String> fileList2 = new ArrayList<>();
+        while (bufferedReader2.ready()){
+            fileList2.add(bufferedReader2.readLine());
+        }
         bufferedReader2.close();
+
+
+        compareAndAddStrings(fileList1, 0, fileList2, 0);
+
+        compareLists(fileList1, fileList2);
+
+
 
     }
 
+    private static void compareAndAddStrings(List<String> fileList1, int pos1, List<String> fileList2, int pos2){
+        String s1, s2;
+        if (fileList1.size() != pos1){
+            s1 = fileList1.get(pos1);
+        } else {
+            fileList1.add("");
+            return;
+        }
+        if (fileList2.size() != pos2){
+            s2 = fileList2.get(pos2);
+        } else {
+            fileList2.add("");
+            return;
+        }
+
+        if (s1.equals(s2) || s1.equals("") || s2.equals("")){
+            compareAndAddStrings(fileList1, pos1 + 1, fileList2, pos2 + 1);
+        } else if (s1.equals(fileList2.get(pos2 + 1))){
+            fileList1.add(pos1, "");
+            compareAndAddStrings(fileList1, pos1 + 2, fileList2, pos2 + 2);
+        } else if (s2.equals(fileList1.get(pos1 + 1))){
+            fileList2.add(pos2, "");
+            compareAndAddStrings(fileList1, pos1 + 2, fileList2, pos2 + 2);
+        }
+    }
+
+    private static void compareLists(List<String> fileList1, List<String> fileList2){
+        for (int i = 0; i < fileList1.size(); i++) {
+            String s1 = fileList1.get(i);
+            String s2 = fileList2.get(i);
+
+            if (s2.equals("")){
+                lines.add(new LineItem(Type.REMOVED, s1));
+            } else if (s1.equals("")){
+                lines.add(new LineItem(Type.ADDED, s2));
+            } else lines.add(new LineItem(Type.SAME, s1));
+        }
+    }
 
     public static enum Type {
         ADDED,        //добавлена новая строка
